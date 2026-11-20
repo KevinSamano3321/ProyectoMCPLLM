@@ -1,0 +1,4 @@
+bin/
+obj/
+ClienteChat/config.json
+.vs/
