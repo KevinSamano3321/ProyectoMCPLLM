@@ -55,6 +55,18 @@ cd ..
 1. **Servidor MCP (`ServidorMCP/appsettings.json`):**
    Define la dirección HTTP donde escuchará el servidor (`http://localhost:5000`) y el nombre del archivo donde se guardan los datos (`gastos.json`).
 
+```json
+{
+  "Urls": "http://localhost:5000",
+  "ArchivoGastos": "gastos.json",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}
+```
 2. **Cliente de Chat (`ClienteChat/config.json`):**
    Asegúrate de contar con el archivo `config.json` (basado en `config.example.json`) dentro de la carpeta `ClienteChat` con la siguiente estructura:
 
