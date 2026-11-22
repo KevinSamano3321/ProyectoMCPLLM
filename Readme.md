@@ -30,7 +30,18 @@ ollama list
 
 ---
 
-## 2. Instalación de dependencias en cada carpeta
+## 2. Creación de proyectos en C#
+
+Abre una terminal en la carpeta raíz donde estará el proyecto y ejecuta los siguientes comandos para crear los proyectos de C#.
+
+```bash
+dotnet new web -n ServidorMCP 
+dotnet new console -n ClienteChat
+
+```
+---
+
+## 3. Instalación de dependencias en cada carpeta
 
 Abre una terminal en la carpeta raíz del proyecto y ejecuta los siguientes comandos para instalar los paquetes necesarios de **Model Context Protocol** en cada proyecto:
 
@@ -50,7 +61,7 @@ cd ..
 
 ---
 
-## 3. Configuración
+## 4. Configuración
 
 1. **Servidor MCP (`ServidorMCP/appsettings.json`):**
    Define la dirección HTTP donde escuchará el servidor (`http://localhost:5000`) y el nombre del archivo donde se guardan los datos (`gastos.json`).
@@ -86,7 +97,7 @@ cd ..
 
 ---
 
-## 4. Ejecución del proyecto
+## 5. Ejecución del proyecto
 
 Para utilizar el sistema es necesario abrir **dos terminales** (manteniendo Ollama activo en segundo plano) y seguir este orden:
 
@@ -113,7 +124,7 @@ dotnet run
 
 ---
 
-## 5. Evidencias de funcionamiento
+## 6. Evidencias de funcionamiento
 
 ### 1. Servidor MCP iniciado y accesible en su URL
 ![Servidor MCP iniciado](Evidencias/evidencia1.jpg)
